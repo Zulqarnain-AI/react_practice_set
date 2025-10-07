@@ -1,4 +1,5 @@
 
+
 export default function User({data}) {
     return (
         <div style={{textAlign:"center",backgroundColor:"#6b717dff", minHeight:"100vh", color:"white", padding:"20px"}}>
