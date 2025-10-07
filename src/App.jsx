@@ -3,7 +3,7 @@ import './App.css'
 // import Checkbox from './Checkbox'
 // import Radio_Dropdown from './Radio_Dropdown'
 // import User from './User'
-import Clock from './Clock'
+// import Clock from './Clock'
 
 function App() {
 // const user=[
@@ -18,7 +18,9 @@ function App() {
       {/* <Checkbox />   */}
       {/* <Radio_Dropdown /> */}
       {/* <User data={user} /> */}
-      <Clock />
+      {/* <Clock /> */}
+
+
     </>
   )
 }

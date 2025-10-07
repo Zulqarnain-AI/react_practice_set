@@ -14,7 +14,7 @@ function Clock(){
             border:"5px solid black",
             borderRadius:"5px"
         }}>
-            <h1>the digital clock</h1>
+            <h1>the digital clock using useState</h1>
             <h2 style={{
                 backgroundColor:"black",
                 color:"white",

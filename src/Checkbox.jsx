@@ -3,7 +3,7 @@ import { useState } from 'react'
 function Checkbox() {
     const [FileList, setList] = useState([])
     const handleChange = (e) => {
-        console.log(e.target.checked)
+        
         if(e.target.checked){
             setList([...FileList, e.target.id])
         }
