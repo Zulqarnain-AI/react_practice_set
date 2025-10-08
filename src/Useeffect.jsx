@@ -1,41 +1,25 @@
-import { useState } from "react"
 import { useEffect } from "react"
-function Useeffect() {
-    const [count, setCount] = useState(0)
-    const [time, setTime] = useState()
-const [text, setText] = useState("heading three")
-    const counterHandler = () => {
-        setCount(count + 1)
+function Useeffect({count,data}) {
+    function counter(){
+        console.log("counter called: " + count);
     }
 
-    const timeHandler = () => {
-
-        setTime(new Date().toLocaleTimeString())
-
+    function dataHandler(){
+        console.log("data called: " + data);
     }
+    useEffect(()=>{
+        counter();
 
-    function updateTime() {
-        setTime(new Date().toLocaleTimeString())
-    }
+    },[count])
+    useEffect(()=>{
+        dataHandler();
 
-    useEffect(() => {
-        callme()
-    }, [count])
-    
-    function callme() {
-        setText("heading updated " + count)
-    }
-
-    
+    },[data])
     return (
         <>
             <div>
-                <h2>use effect practice set </h2>
-                <h3>counter: {count}</h3>
-                <h3>time: {time}</h3>
-                <h3 id="three">{text}</h3>
-                <button onClick={counterHandler}>counter</button>
-                <button onClick={timeHandler}>time</button>
+                <h2>counter : {count} </h2>
+                <h2>data : {data}   </h2>
             </div>
         </>
     )

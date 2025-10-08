@@ -13,14 +13,18 @@ function App() {
 //   {name:"Sourav", age:26,email:"sourav2@gmail.com"},
 //   {name:"Rahul", age:27,email:"rahul@gmail.com"},
 // ]
-
+const [count, setCount] = useState(0)
+const [data, setData] = useState(0)
   return (
     <>
       {/* <Checkbox />   */}
       {/* <Radio_Dropdown /> */}
       {/* <User data={user} /> */}
       {/* <Clock /> */}
-      <Useeffect />
+      <Useeffect count={count} data={data}  />
+      <button onClick={()=>setCount(count + 1)}>couter</button>
+      <button onClick={()=>setData(data + 1)}>data</button>
+
     </>
   )
 }
