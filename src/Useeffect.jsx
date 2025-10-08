@@ -7,6 +7,10 @@ function Useeffect({count,data}) {
     function dataHandler(){
         console.log("data called: " + data);
     }
+
+    useEffect(()=>{
+        console.log("component mounted");
+    },[])
     useEffect(()=>{
         counter();
 

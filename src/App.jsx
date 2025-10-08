@@ -15,15 +15,20 @@ function App() {
 // ]
 const [count, setCount] = useState(0)
 const [data, setData] = useState(0)
+const [hide, setHide] = useState(false)
   return (
     <>
       {/* <Checkbox />   */}
       {/* <Radio_Dropdown /> */}
       {/* <User data={user} /> */}
       {/* <Clock /> */}
-      <Useeffect count={count} data={data}  />
       <button onClick={()=>setCount(count + 1)}>couter</button>
       <button onClick={()=>setData(data + 1)}>data</button>
+      <button onClick={()=>setHide(!hide)}>{hide?"Unhide":"Hide"}</button>
+      {
+        hide?null:<Useeffect count={count} data={data}  />
+
+      }
 
     </>
   )
