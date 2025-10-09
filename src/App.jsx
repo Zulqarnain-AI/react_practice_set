@@ -4,7 +4,8 @@ import './App.css'
 // import Radio_Dropdown from './Radio_Dropdown'
 // import User from './User'
 // import Clock from './Clock'
-import Useeffect from './Useeffect'
+// import Useeffect from './Useeffect'
+import DynamicStyling from './dynamicStyling'
 
 function App() {
 // const user=[
@@ -13,22 +14,24 @@ function App() {
 //   {name:"Sourav", age:26,email:"sourav2@gmail.com"},
 //   {name:"Rahul", age:27,email:"rahul@gmail.com"},
 // ]
-const [count, setCount] = useState(0)
-const [data, setData] = useState(0)
-const [hide, setHide] = useState(false)
+// const [count, setCount] = useState(0)
+// const [data, setData] = useState(0)
+// const [hide, setHide] = useState(false)
   return (
     <>
-      {/* <Checkbox />   */}
-      {/* <Radio_Dropdown /> */}
-      {/* <User data={user} /> */}
-      {/* <Clock /> */}
+      {/* <Checkbox />  
+      <Radio_Dropdown />
+      <User data={user} />
+      <Clock />
       <button onClick={()=>setCount(count + 1)}>couter</button>
       <button onClick={()=>setData(data + 1)}>data</button>
       <button onClick={()=>setHide(!hide)}>{hide?"Unhide":"Hide"}</button>
       {
         hide?null:<Useeffect count={count} data={data}  />
 
-      }
+      } */}
+
+      <DynamicStyling />
 
     </>
   )
