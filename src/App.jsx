@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import './css/style.css'
-import ForExternalCss from './forExternalCss'
 
 // import Checkbox from './Checkbox'
 // import Radio_Dropdown from './Radio_Dropdown'
@@ -9,7 +8,8 @@ import ForExternalCss from './forExternalCss'
 // import Clock from './Clock'
 // import Useeffect from './Useeffect'
 // import DynamicStyling from './dynamicStyling'
-
+// import ForExternalCss from './forExternalCss'
+import ForModularCss from './forModulCss'
 function App() {
   // const user=[
   //   {name:"Ankit", age:24,email:"ankit@gmail.com"},
@@ -35,8 +35,8 @@ function App() {
       } */}
 
       {/* <DynamicStyling /> */}
-      <ForExternalCss />
-
+      {/* <ForExternalCss /> */}
+      <ForModularCss />
 
     </>
   )

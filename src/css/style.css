@@ -54,3 +54,8 @@
 .cardButton:hover {
     background-color: #35ce2a;
 }
+h1 {
+    text-align: center;
+    color: #9b3333;
+    margin-top: 16px;
+}
