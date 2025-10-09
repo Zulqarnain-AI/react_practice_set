@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import style from 'styled-components'
 import './App.css'
-import './css/style.css'
+// import './css/style.css'
 
 // import Checkbox from './Checkbox'
 // import Radio_Dropdown from './Radio_Dropdown'
@@ -9,7 +10,17 @@ import './css/style.css'
 // import Useeffect from './Useeffect'
 // import DynamicStyling from './dynamicStyling'
 // import ForExternalCss from './forExternalCss'
-import ForModularCss from './forModulCss'
+// import ForModularCss from './forModulCss'
+const Heading= style.h1`
+  color:blue;
+  text-align:center;
+  font-size:30px;
+  `
+  const Subheading= style.h2({
+    color:"green",
+    textAlign:"center",
+    fontSize:"20px"
+  })
 function App() {
   // const user=[
   //   {name:"Ankit", age:24,email:"ankit@gmail.com"},
@@ -20,6 +31,7 @@ function App() {
   // const [count, setCount] = useState(0)
   // const [data, setData] = useState(0)
   // const [hide, setHide] = useState(false)
+  
   return (
     <>
       {/* <Checkbox />  
@@ -36,7 +48,9 @@ function App() {
 
       {/* <DynamicStyling /> */}
       {/* <ForExternalCss /> */}
-      <ForModularCss />
+      {/* <ForModularCss /> */}
+<Heading>Styled Component</Heading>
+<Subheading>This is Subheading</Subheading>
 
     </>
   )
