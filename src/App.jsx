@@ -1,6 +1,8 @@
 // import { useState } from 'react'
 // import './App.css'
 
+import UncontrolledComponent from "./UncontrolledComponent"
+
 // import './css/style.css'
 
 // import Checkbox from './Checkbox'
@@ -11,8 +13,8 @@
 // import DynamicStyling from './dynamicStyling'
 // import ForExternalCss from './forExternalCss'
 // import ForModularCss from './forModulCss'
-import UseRefHook from './UseRefHook'
-import StyledComponent from "./styledComponent"
+// import UseRefHook from './UseRefHook'
+// import StyledComponent from "./styledComponent"
 
 function App() {
 
@@ -43,10 +45,10 @@ function App() {
       {/* <DynamicStyling /> */}
       {/* <ForExternalCss /> */}
       {/* <ForModularCss /> */}
-      <UseRefHook />
-      <StyledComponent />
-      
+      {/* <UseRefHook /> */}
+      {/* <StyledComponent /> */}
 
+      <UncontrolledComponent />
 
 
     </>
