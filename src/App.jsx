@@ -1,8 +1,5 @@
 // import { useState } from 'react'
 // import './App.css'
-
-import UncontrolledComponent from "./UncontrolledComponent"
-
 // import './css/style.css'
 
 // import Checkbox from './Checkbox'
@@ -15,6 +12,8 @@ import UncontrolledComponent from "./UncontrolledComponent"
 // import ForModularCss from './forModulCss'
 // import UseRefHook from './UseRefHook'
 // import StyledComponent from "./styledComponent"
+// import UncontrolledComponent from "./UncontrolledComponent"
+import ToPassFunctionAsProps from './ToPassFunctionAsProps'
 
 function App() {
 
@@ -27,7 +26,9 @@ function App() {
   // const [count, setCount] = useState(0)
   // const [data, setData] = useState(0)
   // const [hide, setHide] = useState(false)
-
+  const handleClick = (name) => {
+    alert(name+" Button Clicked")
+  }
   return (
     <>
       {/* <Checkbox />  
@@ -47,9 +48,8 @@ function App() {
       {/* <ForModularCss /> */}
       {/* <UseRefHook /> */}
       {/* <StyledComponent /> */}
-
-      <UncontrolledComponent />
-
+      {/* <UncontrolledComponent /> */}
+      <ToPassFunctionAsProps Propfunction={handleClick} />
 
     </>
   )
