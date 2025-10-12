@@ -1,7 +1,6 @@
 // import { useState } from 'react'
 // import './App.css'
 // import './css/style.css'
-
 // import Checkbox from './Checkbox'
 // import Radio_Dropdown from './Radio_Dropdown'
 // import User from './User'
@@ -13,7 +12,8 @@
 // import UseRefHook from './UseRefHook'
 // import StyledComponent from "./styledComponent"
 // import UncontrolledComponent from "./UncontrolledComponent"
-import ToPassFunctionAsProps from './ToPassFunctionAsProps'
+// import ToPassFunctionAsProps from './ToPassFunctionAsProps'
+import UseFormStatusHook from './UseFormStatusHook'
 
 function App() {
 
@@ -23,12 +23,18 @@ function App() {
   //   {name:"Sourav", age:26,email:"sourav2@gmail.com"},
   //   {name:"Rahul", age:27,email:"rahul@gmail.com"},
   // ]
+
+  // these states are created to pass as props in Useeffect component
   // const [count, setCount] = useState(0)
   // const [data, setData] = useState(0)
   // const [hide, setHide] = useState(false)
-  const handleClick = (name) => {
-    alert(name+" Button Clicked")
-  }
+
+  // this function is created to pass function as props
+  // const handleClick = (name) => {
+  //   alert(name+" Button Clicked")
+  // }
+  
+
   return (
     <>
       {/* <Checkbox />  
@@ -49,7 +55,10 @@ function App() {
       {/* <UseRefHook /> */}
       {/* <StyledComponent /> */}
       {/* <UncontrolledComponent /> */}
-      <ToPassFunctionAsProps Propfunction={handleClick} />
+      {/* <ToPassFunctionAsProps Propfunction={handleClick} /> */}
+<UseFormStatusHook />
+      
+
 
     </>
   )
