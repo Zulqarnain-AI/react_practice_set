@@ -13,7 +13,7 @@
 // import StyledComponent from "./styledComponent"
 // import UncontrolledComponent from "./UncontrolledComponent"
 // import ToPassFunctionAsProps from './ToPassFunctionAsProps'
-import UseFormStatusHook from './UseFormStatusHook'
+// import UseFormStatusHook from './UseFormStatusHook'
 
 function App() {
 
@@ -33,7 +33,7 @@ function App() {
   // const handleClick = (name) => {
   //   alert(name+" Button Clicked")
   // }
-  
+
 
   return (
     <>
@@ -56,8 +56,8 @@ function App() {
       {/* <StyledComponent /> */}
       {/* <UncontrolledComponent /> */}
       {/* <ToPassFunctionAsProps Propfunction={handleClick} /> */}
-<UseFormStatusHook />
-      
+      {/* <UseFormStatusHook /> */}
+
 
 
     </>
