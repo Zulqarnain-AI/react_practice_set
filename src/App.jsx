@@ -14,7 +14,7 @@
 // import UncontrolledComponent from "./UncontrolledComponent"
 // import ToPassFunctionAsProps from './ToPassFunctionAsProps'
 // import UseFormStatusHook from './UseFormStatusHook'
-import DerivedState from "./assets/DerivedState"
+import DerivedState from "./DerivedState"
 
 // import Transition from './Transitions'
 function App() {
