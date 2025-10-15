@@ -14,8 +14,8 @@
 // import UncontrolledComponent from "./UncontrolledComponent"
 // import ToPassFunctionAsProps from './ToPassFunctionAsProps'
 // import UseFormStatusHook from './UseFormStatusHook'
-import DerivedState from "./DerivedState"
-
+// import DerivedState from "./DerivedState"
+import ObjectState from "./Object-State"
 // import Transition from './Transitions'
 function App() {
 
@@ -60,8 +60,8 @@ function App() {
       {/* <ToPassFunctionAsProps Propfunction={handleClick} /> */}
       {/* <UseFormStatusHook /> */}
       {/* <Transition /> */}
-      <DerivedState />
-
+      {/* <DerivedState /> */}
+<ObjectState />
     </>
   )
 }
