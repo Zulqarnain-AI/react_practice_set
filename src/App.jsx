@@ -15,7 +15,9 @@
 // import ToPassFunctionAsProps from './ToPassFunctionAsProps'
 // import UseFormStatusHook from './UseFormStatusHook'
 // import DerivedState from "./DerivedState"
-import ObjectState from "./Object-State"
+// import ObjectState from "./Object-State"
+import ArrayInState from "./ArrayInState"
+
 // import Transition from './Transitions'
 function App() {
 
@@ -61,7 +63,8 @@ function App() {
       {/* <UseFormStatusHook /> */}
       {/* <Transition /> */}
       {/* <DerivedState /> */}
-<ObjectState />
+      {/* <ObjectState /> */}
+      <ArrayInState />
     </>
   )
 }
