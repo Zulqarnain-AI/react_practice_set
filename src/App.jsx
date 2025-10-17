@@ -20,7 +20,7 @@
 // import UseActionHook from './UseActionhook'
 // import UseIdHook from "./UseIdHook"
 // import useCustomHook from "./customHook"
-import College from './college'
+// import College from './college'
 
 // import Transition from './Transitions'
 function App() {
@@ -77,8 +77,8 @@ function App() {
       {/* // Custom Hook */}
       {/* <HideShowForCustomHook /> */}
 
-<h1>context API</h1>
-<College />
+      {/* <h1>context API</h1>
+      <College /> */}
     </>
   )
 }
