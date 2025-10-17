@@ -17,7 +17,9 @@
 // import DerivedState from "./DerivedState"
 // import ObjectState from "./Object-State"
 // import ArrayInState from "./ArrayInState"
-import UseActionHook from './UseActionhook'
+// import UseActionHook from './UseActionhook'
+
+import UseIdHook from "./UseIdHook"
 
 // import Transition from './Transitions'
 function App() {
@@ -66,7 +68,11 @@ function App() {
       {/* <DerivedState /> */}
       {/* <ObjectState /> */}
       {/* <ArrayInState /> */}
-      <UseActionHook />
+      {/* <UseActionHook />  */}
+      <UseIdHook />
+      <hr />
+      <UseIdHook />
+
     </>
   )
 }
