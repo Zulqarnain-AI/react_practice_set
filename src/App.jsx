@@ -19,8 +19,8 @@
 // import ArrayInState from "./ArrayInState"
 // import UseActionHook from './UseActionhook'
 // import UseIdHook from "./UseIdHook"
-import useCustomHook from "./customHook"
-
+// import useCustomHook from "./customHook"
+import College from './college'
 
 // import Transition from './Transitions'
 function App() {
@@ -75,22 +75,26 @@ function App() {
       <UseIdHook /> */}
 
       {/* // Custom Hook */}
-      <HideShowForCustomHook />
+      {/* <HideShowForCustomHook /> */}
 
+<h1>context API</h1>
+<College />
     </>
   )
 }
 
-function HideShowForCustomHook() {
-  const [status, toggle] = useCustomHook(true)
-  return(
-    <>
-    <button onClick={()=>{toggle(false)}}>hide</button>
-    <button onClick={()=>{toggle(true)}}>show</button>
-    {
-      status ? <h1>Custom Hook Worked</h1> : null
-    }
-    </>
-  )
-}
+// function HideShowForCustomHook() {
+//   const [status, toggle] = useCustomHook(true)
+//   return(
+//     <>
+//     <button onClick={()=>{toggle(false)}}>hide</button>
+//     <button onClick={()=>{toggle(true)}}>show</button>
+//     {
+//       status ? <h1>Custom Hook Worked</h1> : null
+//     }
+//     </>
+//   )
+// }
+
+
 export default App
