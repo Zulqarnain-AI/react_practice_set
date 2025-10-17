@@ -18,8 +18,9 @@
 // import ObjectState from "./Object-State"
 // import ArrayInState from "./ArrayInState"
 // import UseActionHook from './UseActionhook'
+// import UseIdHook from "./UseIdHook"
+import useCustomHook from "./customHook"
 
-import UseIdHook from "./UseIdHook"
 
 // import Transition from './Transitions'
 function App() {
@@ -69,12 +70,27 @@ function App() {
       {/* <ObjectState /> */}
       {/* <ArrayInState /> */}
       {/* <UseActionHook />  */}
-      <UseIdHook />
+      {/* <UseIdHook />
       <hr />
-      <UseIdHook />
+      <UseIdHook /> */}
+
+      {/* // Custom Hook */}
+      <HideShowForCustomHook />
 
     </>
   )
 }
 
+function HideShowForCustomHook() {
+  const [status, toggle] = useCustomHook(true)
+  return(
+    <>
+    <button onClick={()=>{toggle(false)}}>hide</button>
+    <button onClick={()=>{toggle(true)}}>show</button>
+    {
+      status ? <h1>Custom Hook Worked</h1> : null
+    }
+    </>
+  )
+}
 export default App
